@@ -39,8 +39,13 @@ localhost:11235 (11235 is the default port setup in the included config, but you
 You can also access this view from other computers or phones by using the IP address for the computer it is running, or by forwarding out the configured port on your router firewall and the IP address assigned by your ISP.
 
 
-NOTE on Wallet Statistics:
-If you want to display statistics on your mining wallets, the WalletsToMonitor will need to be Wallet Names that are setup on the full node you are mining against. There is no support for pool mining for these statistics yet.
+IMPORTANT NOTE on Wallet Statistics:
+If you want to display statistics on your mining wallets, the WalletsToMonitor will need to be Wallet Names that are setup on 
+the full node you are mining against. There is no support for pool mining for these statistics yet.
+IF all you want is to see your running miners and their hashrates, submits, rejects and accepts, 
+then the ONLY option you need to set is the ServerPort (which can be left as default). You should also remove/leave the WalletsToMonitor config option BLANK in that case like:
+WalletsToMonitor: 
+
 
 NOTE: SMS is not yet actually supported!
 
