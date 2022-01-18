@@ -42,8 +42,10 @@ You can also access this view from other computers or phones by using the IP add
 IMPORTANT NOTE on Wallet Statistics:
 If you want to display statistics on your mining wallets, the WalletsToMonitor will need to be Wallet Names that are setup on 
 the full node you are mining against. There is no support for pool mining for these statistics yet.
-IF all you want is to see your running miners and their hashrates, submits, rejects and accepts, 
-then the ONLY option you need to set is the ServerPort (which can be left as default). You should also remove/leave the WalletsToMonitor config option BLANK in that case like:
+
+IF ALL YOU WANT TO DO IS MONITOR YOUR ACTIVE MINERS and their hashrates, submits, rejects and accepts, 
+then the ONLY option you need to set is the ServerPort (which can be left as default). 
+You WILL ALSO THEN have to remove/leave the WalletsToMonitor config option BLANK in that case like:
 WalletsToMonitor: 
 
 
