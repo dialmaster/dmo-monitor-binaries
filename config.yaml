@@ -8,7 +8,7 @@ ServerPort: 11235
   # Your full node ip, this is where your miners are also mining to
 NodeIP: XXX.XXX.XXX.XXX
   # Your full node port, the same as used by your miners
-NodePort: 6434
+NodePort: 6433
   # Your full node username and password
 NodeUser: someusername
 NodePass: somepassword
