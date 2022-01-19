@@ -34,7 +34,9 @@ In order to set this up, there are only a few things you need to do:
  If you want to access it from outside your local network (away from home), then you will need to forward that port on your
  router to the machine that is running dmo-monitor as well.
 
+
 Usage:
+
  1) Once you have setup config.yaml, you can simply run dmo-monitor in a console window. It uses ANSI codes for formatting, so
  I recommend you use a terminal application that supports them, but it is not required. You can run the dmo-monitor without
  setting up your miners or anything else, but at that point it won't start reporting anything.
