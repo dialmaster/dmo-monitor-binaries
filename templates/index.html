@@ -1,6 +1,7 @@
     <html>
       <head>
-        <!--<meta http-equiv="refresh" content="15" />-->
+        <meta http-equiv="refresh" content="15" />
+        <script src="/js/app.js"></script>
         <meta name="mobile-web-app-capable" content="yes">
         <title>DMO Mining Monitor</title>
         <style>
@@ -17,10 +18,28 @@
               font-size: 2vw;
               white-space: pre;
           }
+          .table-button {
+            background-color: #A33;
+            border: 1px solid black;
+            cursor: pointer;
+          }
+
+          @media screen and (min-device-width: 600px) {
+            .hidden-pc {
+              display: none;
+            }
+          }
 
           @media screen and (max-device-width: 600px) {
+            .hidden-mobile {
+              display: none;
+            }
+
             .body {
               width: 100%;
+            }
+            .note {
+              font-size: 2vw;
             }
             .styled-table {
               min-width: 90%;
@@ -43,7 +62,7 @@
 
 
           .styled-table tbody tr.warn {
-            background-color: #AA3333 !important
+            background-color: #911 !important
           }
           .styled-table thead tr {
             background-color: #009879;
@@ -81,9 +100,9 @@
             <tr>
               <th>Miner</th>
               <th>Hash</th>
-              <th>S</th>
-              <th>A</th>
-              <th>R</th>
+              <th><span class="hidden-mobile">Submitted</span><span class="hidden-pc">S</span></th>
+              <th><span class="hidden-mobile">Accepted</span><span class="hidden-pc">A</span></th>
+              <th><span class="hidden-mobile">Rejected</span><span class="hidden-pc">R</span></th>
             </tr>
           </thead>
           <tbody>
@@ -91,9 +110,14 @@
             <tr {{if $stats.Late}}class="warn"{{end}}>
               <td>{{$name}} {{if $stats.Late}} - OFFLINE{{end}}</td> 
               <td>{{$stats.HashrateStr}}</td>
+              
+              {{if $stats.Late}}
+              <td colspan="3" class="table-button" onclick="minerOnClick('{{$name}}')">REMOVE MINER</td>
+              {{else}}
               <td>{{$stats.Submit}}</td>
               <td>{{$stats.Accept}}</td>
               <td>{{$stats.Reject}}</td>
+              {{end}}
             </tr>
             {{end}}
             <tr>
@@ -106,11 +130,12 @@
         </div>
 
 
+        {{if .Walletbalance }}
         <div class="wallet-overall-stats-container">
           <table class="styled-table">
           <thead>
             <tr>
-              <th colspan="2">Mining Wallets Overall Info (Last 4 Days)</th>
+              <th colspan="2">Mining Wallets Overall Info</th>
             </tr>
           </thead>
           <tbody>
@@ -119,16 +144,20 @@
               <td>{{.Walletbalance}}</td>
             </tr>
             <tr>
-              <td>Daily Average DMO</td>
+              <td>Daily Average DMO (Last 4 days)</td>
               <td>{{printf "%.2f" .WalletOverallStats.DailyAverage}}</td>
             </tr>
             <tr>
-              <td>Hourly Average DMO</td>
+              <td>Hourly Average DMO (Last 4 days)</td>
               <td>{{printf "%.2f" .WalletOverallStats.HourlyAverage}}</td>
             </tr>
             <tr>
-              <td>Rough Block Win Percent</td>
+              <td>Rough Block Win Percent (Last 4 days)</td>
               <td>{{printf "%.2f" .WalletOverallStats.WinPercent}}</td>
+            </tr>
+            <tr>
+              <td>Projected Coins for Today</td>
+              <td>{{.WalletOverallStats.Projection}}</td>
             </tr>
             <tr><td></td><td></td></tr>
 
@@ -142,7 +171,7 @@
           <table class="styled-table">
           <thead>
             <tr>
-              <th colspan="4">Mining Wallets Daily Stats</th>
+              <th colspan="4">Mining Wallets - Last 4 Days Stats</th>
             </tr>
           </thead>
           <tbody>
@@ -166,7 +195,7 @@
 
           </tbody>
           </table>
-
+          <span class="note">Note: Win percentages are your percentage of all coins mined on the network.</span>
         </div>
 
 
@@ -174,7 +203,7 @@
           <table class="styled-table">
           <thead>
             <tr>
-              <th colspan="3">Mining Wallets Todays Hourly Stats</th>
+              <th colspan="3">Mining Wallets - Todays Hourly Stats</th>
             </tr>
           </thead>
           <tbody>
@@ -198,7 +227,7 @@
           </table>
 
         </div>
-
+        {{end}}
 
 
 

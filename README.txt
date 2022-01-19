@@ -2,11 +2,10 @@ This contains binaries for both Windows and Linux for the monitoring program.
 It also contains a Windows ONLY build of the 2.05 DynMiner2.exe and dyn_miner2.cl for use with this monitor
 Hopefully the changes needed for the miner are integrated into the Foundation build for the miner soon...
 
-Windows:
-dmo-monitor.exe
+Windows: dmo-monitor.exe
+Linux: dmo-monitor
+NOTE: The js/ and templates/ directories and their contents are required as well!
 
-Linux: 
-dmo-monitor
 
 
 Usage:
@@ -15,9 +14,9 @@ This utility is designed to be used to display the realtime mining status of Dyn
 as well as DMO coin mining statistics for specific DMO Wallets linked to a running DMO full node.
 
 In order to use it, you will need to do 2 things:
-1) Setup the config.yaml configuration file that comes with dmo-monitor with information about your fullnode and the wallets you 
+ 1) Setup the config.yaml configuration file that comes with dmo-monitor with information about your fullnode and the wallets you 
 want to display statistics for.
-2) When you run your DynMiner2.exe program you will just need to pass 2 additional command line options in order to connect 
+ 2) When you run your DynMiner2.exe program you will just need to pass 2 additional command line options in order to connect 
 to the dmo-monitor: The URL for your monitoring program and a 'vanity name' to display in the monitor, eg these are the two additional parameters to add to your DynMiner2.exe line:
 -statrpcurl http://123.456.789.111:11235/minerstats -minername TestMiner
 
@@ -48,6 +47,4 @@ then the ONLY option you need to set is the ServerPort (which can be left as def
 You WILL ALSO THEN have to remove/leave the WalletsToMonitor config option BLANK in that case like:
 WalletsToMonitor: 
 
-
-NOTE: SMS is not yet actually supported!
 
