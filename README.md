@@ -56,7 +56,7 @@ So the full line would look like:
 DynMiner2.exe -mode solo -server http://192.168.1.169:6433 -user username -pass password -wallet dy1qvesdfsdfsdfsdfsdfsdfefczsvf -miner GPU,16384,8,0,0 -statrpcurl http://192.168.1.133:11235/minerstats -minername TestMiner
 ```
 
-The `-statrpcurl` argument should use the IP address of the machine the dmo-monitor is running on and the port configured for that dmo-monitor in `config.yaml`. The '/minerstats' part should be left as-is
+The `-statrpcurl` argument should use the IP address of the machine the dmo-monitor is running on and the port configured for that dmo-monitor in `config.yaml`. The '/minerstats' part of the url must be left as-is
 
 Once you run the executable it will immediately start to display statistics in the console. 
 
