@@ -13,11 +13,12 @@ mining statistics. This additional functionality is really only useful for solo 
 ## Files
 
 This contains binaries for both Windows and Linux for the monitoring program.
-It also contains a Windows ONLY build of the 2.05 `DynMiner2.exe` and `dyn_miner2.cl` for use with this monitor
-Hopefully the changes needed for the miner are integrated into the Foundation build for the miner soon...
+It also contains a Windows ONLY build of the 2.05 `DynMiner2.exe` and `dyn_miner2.cl` for use with this monitor.
+Once these changes are integrated into the dynamo foundation miner, this will no longer need my provided build.
 
-Windows: dmo-monitor.exe
-Linux: dmo-monitor
+**Windows:** dmo-monitor.exe
+
+**Linux:** dmo-monitor
 
 ## Setup
 
