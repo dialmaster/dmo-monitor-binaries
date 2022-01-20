@@ -66,7 +66,7 @@ http://localhost:11235/
 (11235 is the default port setup in the included config, but you can change it to whatever you like)
 
 You can also access this view from other computers or phones by using the IP address for the computer it is running dmo-monitor.
-This will look like (as an example):
+This will look like (as an example if you are accessing it from the another device on the same local network):
 http://192.168.1.150:11235/
 
 If you want to access it from outside your house, you will need to have
@@ -83,7 +83,7 @@ There is no support for using receiving addresses yet either.
 
 IF ALL YOU WANT TO DO IS MONITOR YOUR ACTIVE MINERS and their hashrates, submits, rejects and accepts, 
 then you should just leave the WalletsToMonitor config option BLANK like:
-WalletsToMonitor: 
+`WalletsToMonitor: `
 
 ## Compiling
 
