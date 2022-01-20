@@ -36,6 +36,14 @@ In order to set this up, there are only a few things you need to do:
    outside your local network (away from home), then you will need to forward that
    port on your router to the machine that is running dmo-monitor as well.
 
+## Telegram notification setup
+
+You can receive realtime notifications when your miners go offline via telegram.
+To set this up simply:
+* Message /start to @dmo_monitor_bot
+* Message /start to @userinfobot to get your telegram user id
+* Put your telegram user id in myconfig.yaml
+
 
 ## Usage
 
