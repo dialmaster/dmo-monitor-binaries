@@ -83,7 +83,9 @@ There is no support for using receiving addresses yet either.
 
 IF ALL YOU WANT TO DO IS MONITOR YOUR ACTIVE MINERS and their hashrates, submits, rejects and accepts, 
 then you should just leave the WalletsToMonitor config option BLANK like:
-`WalletsToMonitor: `
+```
+WalletsToMonitor: 
+```
 
 ## Compiling
 
