@@ -106,3 +106,6 @@ Go Version used for build: 1.17.5
 go get gopkg.in/yaml.v2
 go build
 ```
+
+## Screenshot of app:
+![image](https://user-images.githubusercontent.com/531169/150429121-da07c222-5b61-479c-b37c-57cd99b567e1.png)
