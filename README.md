@@ -14,7 +14,8 @@ mining statistics. This additional functionality is really only useful for solo 
 
 This contains binaries for both Windows and Linux for the monitoring program.
 It also contains a Windows ONLY build of the 2.05 `DynMiner2.exe` and `dyn_miner2.cl` for use with this monitor.
-Once these changes are integrated into the dynamo foundation miner, this will no longer need my provided build.
+These changes have been integrated into the newest foundation 2.06 binaries and should be usable with them, as long as the 
+usage reports support for -statrpcurl
 
 **Windows:** dmo-monitor.exe
 
