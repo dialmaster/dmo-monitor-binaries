@@ -109,4 +109,4 @@ go build
 ```
 
 ## Screenshot of app:
-![image](https://user-images.githubusercontent.com/531169/150429121-da07c222-5b61-479c-b37c-57cd99b567e1.png)
+![110shot](https://user-images.githubusercontent.com/531169/151652270-635b47f8-9e33-4dab-a5d0-6b4c2ce50672.png)
