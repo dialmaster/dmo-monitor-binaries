@@ -72,12 +72,12 @@ Once you run the executable it will immediately start to display statistics in t
 
 You can also access a webview that is mobile friendly by visiting your server IP address/port 
 from the machine that is running dmo-monitor via:
-http://localhost:11235/ 
+http://localhost:11235/stats 
 (11235 is the default port setup in the included config, but you can change it to whatever you like)
 
 You can also access this view from other computers or phones by using the IP address for the computer it is running dmo-monitor.
 This will look like (as an example if you are accessing it from the another device on the same local network):
-http://192.168.1.150:11235/
+http://192.168.1.150:11235/stats
 
 If you want to access it from outside your house, you will need to have
 forwarded the port on your router and then you would access it using the IP
@@ -109,4 +109,4 @@ go build
 ```
 
 ## Screenshot of app:
-![image](https://user-images.githubusercontent.com/531169/150429121-da07c222-5b61-479c-b37c-57cd99b567e1.png)
+![110shot](https://user-images.githubusercontent.com/531169/151652270-635b47f8-9e33-4dab-a5d0-6b4c2ce50672.png)
