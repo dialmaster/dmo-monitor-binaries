@@ -6,8 +6,9 @@ This package is designed to be used in conjunction with `DynMiner2.exe` to facil
 of running miners, including their hashrate, submits, rejects and accepts. It can also be used to notity via
 Telegram when a miner stops reporting in.
 
-It has additional functionality to accept Wallet names and connect to a fullnode to give reporting on 
-mining statistics. This additional functionality is really only useful for solo mining at this time.
+It has additional functionality to accept receiving addresses to give statistical reporting on 
+mining (coins mined, coins per day, etc). This additional functionality is only useful for solo mining as
+pool mining submits your coins into the pool receiving address (eg, only the pool operator knows what is yours)
 
 
 ## Files
@@ -85,27 +86,15 @@ address assigned by your ISP.
 
 ## NOTES
 
-Displaying Wallet Statistics:
+Displaying Receiving Address Statistics:
 
-If you want to display statistics on your mining wallets, the WalletsToMonitor will need to be Wallet Names that are setup on 
-the full node you are mining against. There is no support for pool mining for these statistics yet. 
-There is no support for using receiving addresses yet either.
+If you want to display statistics on your coins mined, the AddrsToMonitor will need to be the receiving addresses that you are mining to.
+Pool mining is not supported for these statistics
 
 IF ALL YOU WANT TO DO IS MONITOR YOUR ACTIVE MINERS and their hashrates, submits, rejects and accepts, 
-then you should just leave the WalletsToMonitor config option BLANK like:
+then you should just leave the AddrsToMonitor config option blank.
 ```
-WalletsToMonitor: 
-```
-
-## Compiling
-
-To build the executable:
-
-Go Version used for build: 1.17.5
-
-```
-go get gopkg.in/yaml.v2
-go build
+AddrsToMonitor: 
 ```
 
 ## Screenshot of app:
