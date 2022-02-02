@@ -97,5 +97,7 @@ then you should just leave the AddrsToMonitor config option blank.
 AddrsToMonitor: 
 ```
 
+*For any bug reports, questions, or feature requests, please email cdial@dmo-monitor.com*
+
 ## Screenshot of app:
 ![110shot](https://user-images.githubusercontent.com/531169/151652270-635b47f8-9e33-4dab-a5d0-6b4c2ce50672.png)
