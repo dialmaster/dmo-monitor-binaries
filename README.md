@@ -100,4 +100,4 @@ AddrsToMonitor:
 *For any bug reports, questions, or feature requests, please email cdial@dmo-monitor.com*
 
 ## Screenshot of app:
-![110shot](https://user-images.githubusercontent.com/531169/151652270-635b47f8-9e33-4dab-a5d0-6b4c2ce50672.png)
+![dmo-monitorv1 2 0](https://user-images.githubusercontent.com/531169/152301296-f94f9601-942d-497d-aa27-9fe3bb995530.png)
